@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Agenda</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="agenda.js" defer></script>
+
+</head>
+<body>
+
+    <div class="container mt-5">
+
+        <h1 class="text-center mb-4">
+            Agenda Telefónica
+        </h1>
+
+        <div class="card p-4 shadow mb-4">
+
+            <input
+                type="text"
+                id="nomyApe"
+                class="form-control mb-3"
+                placeholder="Nombre y apellido"
+            >
+
+            <input
+                type="text"
+                id="telefono"
+                class="form-control mb-3"
+                placeholder="Teléfono"
+            >
+
+            <input
+                type="text"
+                id="direccion"
+                class="form-control mb-3"
+                placeholder="Dirección"
+            >
+
+            <input
+                type="email"
+                id="email"
+                class="form-control mb-3"
+                placeholder="Email"
+            >
+
+            <button
+                class="btn btn-primary"
+                id="btnAgregar"
+            >
+                AGREGAR CONTACTO
+            </button>
+
+        </div>
+
+        <!-- Tabla -->
+        <table class="table table-striped table-bordered">
+
+            <thead class="table-dark">
+
+                <tr>
+
+                    <th>Nombre</th>
+                    <th>Teléfono</th>
+                    <th>Dirección</th>
+                    <th>Email</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="tablaContactos"></tbody>
+
+        </table>
+
+    </div>
+
+</body>
+</html>
